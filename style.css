@@ -42,18 +42,31 @@ font-weight:500;
 }
 
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-text-align:center;
-padding:20px;
+padding:80px 10%;
 background:linear-gradient(
 135deg,
 #fff,
 #fff7f7,
 #ffe9ee
 );
+}
+
+.hero-content{
+width:50%;
+}
+
+.hero-image{
+width:45%;
+}
+
+.hero-image img{
+width:100%;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
 .hero h1{
