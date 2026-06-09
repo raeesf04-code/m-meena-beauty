@@ -5,22 +5,28 @@
 }
 
 body{
-    font-family:Arial,sans-serif;
-    color:#333;
-    background:#fff;
+    font-family:Arial, sans-serif;
+    color:#222;
+    background:#ffffff;
+    line-height:1.6;
 }
 
 nav{
     display:flex;
     justify-content:space-between;
-    padding:20px 10%;
-    background:#fff;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .logo{
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
+    color:#B76E79;
 }
 
 nav ul{
@@ -31,75 +37,115 @@ nav ul{
 
 nav a{
     text-decoration:none;
-    color:#333;
+    color:#222;
+    font-weight:500;
 }
 
 .hero{
-    height:80vh;
+    min-height:85vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:#fdf4f6;
-    padding:20px;
+    padding:40px;
+    background:#FFF8F8;
 }
 
 .hero h1{
-    font-size:55px;
-    margin-bottom:15px;
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    color:#B76E79;
+    font-size:26px;
+    margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:600px;
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
 }
 
 .btn{
-    margin-top:25px;
-    background:#111;
+    display:inline-block;
+    margin-top:30px;
+    background:#B76E79;
     color:white;
-    padding:14px 28px;
     text-decoration:none;
-    border-radius:30px;
+    padding:14px 30px;
+    border-radius:40px;
 }
 
-.products{
+section{
     padding:80px 10%;
-    text-align:center;
 }
 
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.features,
 .cards{
     display:flex;
-    gap:20px;
+    gap:25px;
     justify-content:center;
     flex-wrap:wrap;
-    margin-top:40px;
 }
 
-.card{
-    width:280px;
+.feature,
+.card,
+.review-box{
     background:white;
     padding:30px;
-    border-radius:15px;
+    border-radius:18px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feature,
+.card{
+    width:300px;
+}
+
+.product-image{
+    height:220px;
+    background:#f2f2f2;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.reviews{
+    background:#FFF8F8;
+}
+
+.review-box{
+    max-width:600px;
+    margin:20px auto;
 }
 
 .about,
 .contact{
-    padding:80px 10%;
     text-align:center;
-    background:#fafafa;
-
-    .hero h3{
-    color:#B76E79;
-    font-size:24px;
-    margin-bottom:15px;
-    font-weight:500;
-}
 }
 
 footer{
-    padding:20px;
+    background:#111;
+    color:white;
     text-align:center;
+    padding:25px;
+}
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:50px;
+    font-weight:bold;
 }
