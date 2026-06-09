@@ -18,9 +18,17 @@
 </nav>
 
 <header class="hero">
-    <h1>Beauty That Feels Natural</h1>
-    <p>Premium skincare and hair care products for modern women.</p>
-    <a href="https://wa.me/923001234567" class="btn">Order on WhatsApp</a>
+    <h1>M. MEENA BEAUTY</h1>
+
+    <h3>Luxury Skincare & Hair Care for Every Woman</h3>
+
+    <p>
+        Discover authentic beauty products carefully selected to help you glow with confidence every day.
+    </p>
+
+    <a href="https://wa.me/923257059472" class="btn">
+        Order on WhatsApp
+    </a>
 </header>
 
 <section id="products" class="products">
