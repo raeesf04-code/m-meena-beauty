@@ -65,7 +65,7 @@ product.style.display = "none";
 });
 
 });
-```javascript
+
 // CART DRAWER
 
 const cartIcon = document.querySelector('.cart-count');
@@ -99,4 +99,4 @@ cartDrawer.classList.remove('active');
 cartOverlay.classList.remove('active');
 
 });
-```
+
