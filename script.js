@@ -1,7 +1,9 @@
 const images = [
-"hero1.webp",
-"hero2.jpg",
-"hero3.webp"
+"hero4.jpg",
+"hero5.jpg",
+"hero6.jpg",
+"hero7.jpg",
+"hero8.jpg"
 ];
 
 let current = 0;
@@ -14,7 +16,6 @@ if(current >= images.length){
 current = 0;
 }
 
-document.getElementById("slider").src =
-images[current];
+document.getElementById("slider").src = images[current];
 
-},3000);
+}, 2500);
