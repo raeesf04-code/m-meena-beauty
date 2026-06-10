@@ -1,11 +1,10 @@
-```javascript id="8o8t4m"
-// HERO SLIDER
-
 let slides = document.querySelectorAll('.slide');
 
 let current = 0;
 
 setInterval(() => {
+
+if(slides.length > 0){
 
 slides[current].classList.remove('active');
 
@@ -17,10 +16,9 @@ current = 0;
 
 slides[current].classList.add('active');
 
+}
+
 }, 4000);
-
-
-// CART COUNTER
 
 let cartCount = 0;
 
@@ -34,7 +32,7 @@ button.addEventListener('click', () => {
 
 cartCount++;
 
-cartDisplay.innerText = cartCount;
+cartDisplay.textContent = cartCount;
 
 button.innerText = "Added ✓";
 
@@ -45,9 +43,6 @@ button.innerText = "Add To Cart";
 });
 
 });
-
-
-// SEARCH FILTER
 
 const searchInput = document.querySelector('.search-box input');
 
@@ -70,4 +65,3 @@ product.style.display = "none";
 });
 
 });
-```
