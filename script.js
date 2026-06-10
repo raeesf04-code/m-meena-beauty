@@ -1,20 +1,17 @@
-const images = [
-"hero4.jpg",
-"hero5.jpg",
-"hero6.jpg",
-"hero7.jpg",
-"hero8.jpg"
-];
+let slides=document.querySelectorAll('.slide');
 
-let current = 0;
+let current=0;
 
-setInterval(() => {
+setInterval(()=>{
+
+slides[current].classList.remove('active');
+
 current++;
 
-if(current >= images.length){
-current = 0;
+if(current>=slides.length){
+current=0;
 }
 
-document.getElementById("slider").src = images[current];
+slides[current].classList.add('active');
 
-}, 2500);
+},3000);
