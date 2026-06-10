@@ -117,7 +117,6 @@ Rs.${item.price}
 </div>
 `;
 
-
 });
 
 cartTotal.innerText = total;
