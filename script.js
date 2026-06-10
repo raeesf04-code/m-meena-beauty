@@ -65,3 +65,38 @@ product.style.display = "none";
 });
 
 });
+```javascript
+// CART DRAWER
+
+const cartIcon = document.querySelector('.cart-count');
+
+const cartDrawer = document.querySelector('.cart-drawer');
+
+const cartOverlay = document.querySelector('.cart-overlay');
+
+const closeCart = document.querySelector('.close-cart');
+
+cartIcon.addEventListener('click', () => {
+
+cartDrawer.classList.add('active');
+
+cartOverlay.classList.add('active');
+
+});
+
+closeCart.addEventListener('click', () => {
+
+cartDrawer.classList.remove('active');
+
+cartOverlay.classList.remove('active');
+
+});
+
+cartOverlay.addEventListener('click', () => {
+
+cartDrawer.classList.remove('active');
+
+cartOverlay.classList.remove('active');
+
+});
+```
