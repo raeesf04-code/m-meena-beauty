@@ -167,3 +167,14 @@ window.open(
 
 });
 }
+const closeCheckout = document.querySelector(".close-checkout");
+
+if(closeCheckout){
+
+closeCheckout.addEventListener("click", () => {
+
+document.querySelector(".checkout-modal").style.display = "none";
+
+});
+
+}
