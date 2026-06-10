@@ -1,4 +1,4 @@
-```javascript
+
 // HERO SLIDER
 
 const slides = document.querySelectorAll(".slide");
