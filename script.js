@@ -9,7 +9,6 @@ const images = [
 let current = 0;
 
 setInterval(() => {
-
 current++;
 
 if(current >= images.length){
