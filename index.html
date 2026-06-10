@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +7,14 @@
 <title>M. MEENA BEAUTY</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- TOP BAR -->
-
 <div class="topbar">
 Free Delivery Across Pakistan | Premium Beauty Store
 </div>
 
 <!-- HEADER -->
-
 <header class="header">
 
 <div class="logo">
@@ -31,55 +28,50 @@ M. MEENA BEAUTY
 <div class="icons">
 <span>👤</span>
 <span>❤</span>
-<span>🛒 <span class="cart-count">0</span></span>
+<span class="cart-icon">
+🛒 <span class="cart-count">0</span>
+</span>
 </div>
 
 </header>
 
 <!-- NAVBAR -->
-
 <nav class="navbar">
-
 <ul>
-
 <li><a href="#">Home</a></li>
 <li><a href="#collections">Collections</a></li>
 <li><a href="#products">Products</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
 </nav>
 
 <!-- HERO SLIDER -->
-
 <section class="hero-slider">
 
 <div class="slide active">
-<img src="hero4.jpg">
+<img src="hero4.jpg" alt="">
 </div>
 
 <div class="slide">
-<img src="hero5.jpg">
+<img src="hero5.jpg" alt="">
 </div>
 
 <div class="slide">
-<img src="hero6.jpg">
+<img src="hero6.jpg" alt="">
 </div>
 
 <div class="slide">
-<img src="hero7.jpg">
+<img src="hero7.jpg" alt="">
 </div>
 
 <div class="slide">
-<img src="hero8.jpg">
+<img src="hero8.jpg" alt="">
 </div>
 
 </section>
 
 <!-- COLLECTIONS -->
-
 <section id="collections" class="collections">
 
 <h2>Shop By Collection</h2>
@@ -106,7 +98,6 @@ M. MEENA BEAUTY
 </section>
 
 <!-- PRODUCTS -->
-
 <section id="products" class="products">
 
 <h2>Best Sellers</h2>
@@ -116,42 +107,42 @@ M. MEENA BEAUTY
 <div class="product-card">
 <img src="hero4.jpg">
 <h3>Glow Serum</h3>
-<p>Rs.1499</p>
+<p class="price">1499</p>
 <button>Add To Cart</button>
 </div>
 
 <div class="product-card">
 <img src="hero5.jpg">
 <h3>Vitamin C Cream</h3>
-<p>Rs.1999</p>
+<p class="price">1999</p>
 <button>Add To Cart</button>
 </div>
 
 <div class="product-card">
 <img src="hero6.jpg">
 <h3>Face Wash</h3>
-<p>Rs.899</p>
+<p class="price">899</p>
 <button>Add To Cart</button>
 </div>
 
 <div class="product-card">
 <img src="hero7.jpg">
 <h3>Beauty Lotion</h3>
-<p>Rs.1299</p>
+<p class="price">1299</p>
 <button>Add To Cart</button>
 </div>
 
 <div class="product-card">
 <img src="hero8.jpg">
 <h3>Sunscreen SPF 50</h3>
-<p>Rs.1799</p>
+<p class="price">1799</p>
 <button>Add To Cart</button>
 </div>
 
 <div class="product-card">
 <img src="hero4.jpg">
 <h3>Hair Growth Serum</h3>
-<p>Rs.1599</p>
+<p class="price">1599</p>
 <button>Add To Cart</button>
 </div>
 
@@ -160,7 +151,6 @@ M. MEENA BEAUTY
 </section>
 
 <!-- REVIEWS -->
-
 <section id="reviews" class="reviews">
 
 <h2>Customer Reviews</h2>
@@ -187,7 +177,6 @@ M. MEENA BEAUTY
 </section>
 
 <!-- CONTACT -->
-
 <section id="contact" class="contact">
 
 <h2>Contact Us</h2>
@@ -197,9 +186,10 @@ M. MEENA BEAUTY
 <a href="https://wa.me/923257059472" class="btn">
 WhatsApp Support
 </a>
-```html
-<!-- CART DRAWER -->
 
+</section>
+
+<!-- CART DRAWER -->
 <div class="cart-drawer">
 
 <div class="cart-header">
@@ -207,19 +197,50 @@ WhatsApp Support
 <span class="close-cart">✕</span>
 </div>
 
-<div class="cart-body">
+<div class="cart-body" id="cart-items">
 
-<p>No products added yet.</p>
+<p>Your cart is empty.</p>
+
+</div>
+
+<div class="cart-footer">
+
+<h3>Total: Rs.<span id="cart-total">0</span></h3>
+
+<button id="checkout-btn">
+Proceed To Checkout
+</button>
 
 </div>
 
 </div>
 
 <div class="cart-overlay"></div>
-```
 
-</section>
+<!-- CHECKOUT -->
+<div class="checkout-modal">
 
+<div class="checkout-box">
+
+<h2>Checkout</h2>
+
+<input type="text" id="customer-name" placeholder="Full Name">
+
+<input type="text" id="customer-phone" placeholder="Phone Number">
+
+<input type="text" id="customer-city" placeholder="City">
+
+<textarea id="customer-address" placeholder="Full Address"></textarea>
+
+<button id="place-order">
+Place Order
+</button>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
 <footer>
 
 <h3>M. MEENA BEAUTY</h3>
@@ -238,4 +259,4 @@ WhatsApp
 
 </body>
 </html>
-
+```
