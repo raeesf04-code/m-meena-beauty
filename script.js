@@ -108,6 +108,7 @@ cart.forEach(item => {
 
 total += item.price;
 
+
 cartItems.innerHTML += `
 <div style="padding:10px 0;border-bottom:1px solid #eee;">
 <strong>${item.name}</strong>
@@ -115,6 +116,7 @@ cartItems.innerHTML += `
 Rs.${item.price}
 </div>
 `;
+
 
 });
 
