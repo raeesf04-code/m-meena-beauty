@@ -36,7 +36,7 @@ if(cartIcon){
 cartIcon.innerText = cartCount;
 }
 
-alert('Product Added To Cart');
+
 
 });
 
