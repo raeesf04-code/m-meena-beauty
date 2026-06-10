@@ -74,8 +74,9 @@ const card = button.parentElement;
 
 const name = card.querySelector("h3").innerText;
 
-const price = parseInt(card.querySelector(".price").innerText);
-
+const price = parseInt(
+card.querySelector("p").innerText.replace("Rs.","")
+);
 cart.push({
 name:name,
 price:price
