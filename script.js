@@ -1,63 +1,73 @@
-let cart = [];
-let total = 0;
-let cartCount = 0;
+```javascript id="8o8t4m"
+// HERO SLIDER
 
-const buttons = document.querySelectorAll('.product-card button');
-const cartItems = document.getElementById('cart-items');
-const totalBox = document.getElementById('cart-total');
-const countBox = document.querySelector('.cart-count');
+let slides = document.querySelectorAll('.slide');
 
-buttons.forEach(button=>{
+let current = 0;
 
-button.addEventListener('click',()=>{
+setInterval(() => {
 
-let card = button.parentElement;
+slides[current].classList.remove('active');
 
-let name = card.querySelector('h3').innerText;
+current++;
 
-let price = parseInt(
-card.querySelector('p').innerText.replace('Rs.','')
-);
-
-cart.push({name,price});
-
-cartCount++;
-countBox.innerText = cartCount;
-
-total += price;
-totalBox.innerText = total;
-
-let item = document.createElement('div');
-
-item.classList.add('cart-item');
-
-item.innerHTML = `
-<span>${name}</span>
-<span>Rs.${price}</span>
-`;
-
-cartItems.appendChild(item);
-
-});
-
-});
-
-document.getElementById('place-order').addEventListener('click',()=>{
-
-let name =
-document.getElementById('name').value;
-
-let phone =
-document.getElementById('phone').value;
-
-let address =
-document.getElementById('address').value;
-
-if(!name || !phone || !address){
-alert('Fill all fields');
-return;
+if(current >= slides.length){
+current = 0;
 }
 
-alert('Order Placed Successfully');
+slides[current].classList.add('active');
+
+}, 4000);
+
+
+// CART COUNTER
+
+let cartCount = 0;
+
+const cartDisplay = document.querySelector('.cart-count');
+
+const cartButtons = document.querySelectorAll('.product-card button');
+
+cartButtons.forEach(button => {
+
+button.addEventListener('click', () => {
+
+cartCount++;
+
+cartDisplay.innerText = cartCount;
+
+button.innerText = "Added ✓";
+
+setTimeout(() => {
+button.innerText = "Add To Cart";
+}, 1000);
 
 });
+
+});
+
+
+// SEARCH FILTER
+
+const searchInput = document.querySelector('.search-box input');
+
+const products = document.querySelectorAll('.product-card');
+
+searchInput.addEventListener('keyup', () => {
+
+let value = searchInput.value.toLowerCase();
+
+products.forEach(product => {
+
+let title = product.querySelector('h3').innerText.toLowerCase();
+
+if(title.includes(value)){
+product.style.display = "block";
+}else{
+product.style.display = "none";
+}
+
+});
+
+});
+```
