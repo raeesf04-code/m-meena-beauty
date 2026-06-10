@@ -204,8 +204,7 @@ orderText +=
 "%0AAddress: " + address +
 "%0A%0ATotal: Rs." + cartTotal.innerText;
 
-```javascript
-window.open(
+
 "https://wa.me/923257059472?text=" + orderText,
 "_blank"
 );
