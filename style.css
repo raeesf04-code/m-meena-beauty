@@ -328,7 +328,18 @@ border-radius:20px;
 width:90%;
 max-width:500px;
 }
+.close-checkout{
+position:absolute;
+top:15px;
+right:20px;
+font-size:28px;
+cursor:pointer;
+font-weight:bold;
+}
 
+.checkout-box{
+position:relative;
+}
 .checkout-box input,
 .checkout-box textarea{
 width:100%;
