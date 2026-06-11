@@ -69,39 +69,25 @@ if (cartOverlay) cartOverlay.classList.add("active");
 });
 });
 
-function updateCart() {
-
-if (cartCount) {
-cartCount.innerText = cart.length;
-}
-
-if (!cartItems) return;
-
-cartItems.innerHTML = "";
-
-let total = 0;
-
-if (cart.length === 0) {
-cartItems.innerHTML = "Your cart is empty.";
-}
-
-cart.forEach(item => {
+cart.forEach((item,index) => {
 
 total += item.price;
 
 cartItems.innerHTML += `
-  <div style="padding:10px 0;border-bottom:1px solid #eee;">
-    <strong>${item.name}</strong>
-    <br>
-    Rs.${item.price}
-  </div>
+<div style="padding:10px 0;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;">
+
+<div>
+<strong>${item.name}</strong>
+<br>
+Rs.${item.price}
+</div>
+
+<button onclick="removeItem(${index})">❌</button>
+
+</div>
 `;
 
 });
-
-if (cartTotal) {
-cartTotal.innerText = total;
-}
 }
 
 // OPEN CART
