@@ -167,13 +167,15 @@ window.open(
 
 });
 }
-const closeCheckout = document.querySelector(".close-checkout");
+const checkoutModal = document.querySelector(".checkout-modal");
 
-if(closeCheckout){
+if(checkoutModal){
 
-closeCheckout.addEventListener("click", () => {
+checkoutModal.addEventListener("click", (e) => {
 
-document.querySelector(".checkout-modal").style.display = "none";
+if(e.target === checkoutModal){
+checkoutModal.style.display = "none";
+}
 
 });
 
