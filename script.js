@@ -125,7 +125,7 @@ checkoutModal.style.display = "flex";
 // PLACE ORDER
 const placeOrder = document.getElementById("place-order");
 
-if (placeOrder) {
+if (placeOrder) 
 placeOrder.addEventListener("click", () => {
 
 const name = document.getElementById("customer-name").value;
