@@ -362,21 +362,31 @@ cursor:pointer;
 @media(max-width:768px){
 
 .header{
-flex-direction:column;
-gap:15px;
+flex-direction;
+padding:15px;
+}
+
+.logo{
+font-size:20px;
+text-align;
+}
+
+.search-box{
+width:100%;
 }
 
 .search-box input{
 width:100%;
 }
 
+.product-grid,
 .collection-grid,
 .review-grid{
 grid-template-columns:1fr;
 }
 
 .hero-slider{
-height:350px;
+height:250px;
 }
 
 .cart-drawer{
@@ -384,4 +394,3 @@ width:100%;
 }
 
 }
-```
