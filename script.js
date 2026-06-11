@@ -88,7 +88,7 @@ Rs.${item.price}
 `;
 
 });
-}
+
 
 // OPEN CART
 if (cartIcon) {
