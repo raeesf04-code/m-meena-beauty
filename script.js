@@ -152,7 +152,7 @@ window.open(
 );
 
 });
-}
+
 const checkoutModal = document.querySelector(".checkout-modal");
 
 if(checkoutModal){
